@@ -1,4 +1,4 @@
-import { QrCode, FileImage, Minimize2, Maximize2, Crop, Binary, KeyRound, Hash } from 'lucide-react';
+import { QrCode, FileImage, Minimize2, Maximize2, Crop, Binary, KeyRound, Hash, Braces, Regex, ShieldCheck, Palette, Type, Clock, Link as LinkIcon, FileText, Scan, Mic } from 'lucide-react';
 import type { Tool } from './types';
 
 export const toolsData: Tool[] = [
@@ -65,5 +65,85 @@ export const toolsData: Tool[] = [
         icon: Hash,
         path: '/tools/hash-encode',
         color: 'text-red-400',
+    },
+    {
+        id: 'json-formatter',
+        name: 'JSON Formatter',
+        description: 'Validate, prettify, and minify JSON data.',
+        icon: Braces,
+        path: '/tools/json-formatter',
+        color: 'text-teal-400',
+    },
+    {
+        id: 'regex-tester',
+        name: 'Regex Tester',
+        description: 'Test and debug regular expressions in real-time.',
+        icon: Regex,
+        path: '/tools/regex-tester',
+        color: 'text-indigo-400',
+    },
+    {
+        id: 'jwt-decoder',
+        name: 'JWT Decoder',
+        description: 'Decode JSON Web Tokens (Header & Payload).',
+        icon: ShieldCheck,
+        path: '/tools/jwt-decoder',
+        color: 'text-rose-400',
+    },
+    {
+        id: 'color-tools',
+        name: 'Color / UI Dev',
+        description: 'Color converter, palette generator, and contrast checker.',
+        icon: Palette,
+        path: '/tools/color-tools',
+        color: 'text-fuchsia-400',
+    },
+    {
+        id: 'case-converter',
+        name: 'Text Case Converter',
+        description: 'Convert text between snake, camel, pascal, and more.',
+        icon: Type,
+        path: '/tools/case-converter',
+        color: 'text-lime-400',
+    },
+    {
+        id: 'timestamp-converter',
+        name: 'Unix Timestamp',
+        description: 'Convert between Unix timestamps and human dates.',
+        icon: Clock,
+        path: '/tools/timestamp-converter',
+        color: 'text-emerald-400',
+    },
+    {
+        id: 'url-parser',
+        name: 'URL Parser & Encoder',
+        description: 'Parse, encode, and decode URLs and query params.',
+        icon: LinkIcon,
+        path: '/tools/url-parser',
+        color: 'text-sky-400',
+    },
+    {
+        id: 'markdown-previewer',
+        name: 'Markdown Previewer',
+        description: 'Write and preview Markdown content in real-time.',
+        icon: FileText,
+        path: '/tools/markdown-previewer',
+        color: 'text-slate-400',
+    },
+    {
+        id: 'face-detector',
+        name: 'Face Detector',
+        description: 'Detect faces in images using Chrome API.',
+        icon: Scan,
+        path: '/tools/face-detector',
+        color: 'text-violet-400',
+    },
+    {
+        id: 'voice-tools',
+        name: 'Voice Tools',
+        description: 'Speech recognition and text-to-speech converter.',
+        icon: Mic,
+        path: '/tools/voice-tools',
+        color: 'text-amber-400',
     },
 ];
