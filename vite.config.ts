@@ -10,9 +10,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'Simpleverse Home',
+        name: 'Simpleverse - Privacy-First Tools',
         short_name: 'Simpleverse',
-        description: 'The Simpleverse Ecosystem Showcase',
+        description: 'Privacy-focused applications and developer tools',
         theme_color: '#020617',
         background_color: '#020617',
         display: 'standalone',

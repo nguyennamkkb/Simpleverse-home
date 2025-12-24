@@ -1,0 +1,19 @@
+http:
+  middlewares:
+    # Security headers
+    secureHeaders:
+      headers:
+        sslRedirect: true
+        forceSTSHeader: true
+        stsIncludeSubdomains: true
+        stsPreload: true
+        stsSeconds: 31536000
+        customFrameOptionsValue: "SAMEORIGIN"
+        contentTypeNosniff: true
+        browserXssFilter: true
+        
+    # Rate limiting
+    rateLimit:
+      rateLimit:
+        average: 100
+        burst: 50
