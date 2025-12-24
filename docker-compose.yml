@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+    container_name: simpleverse-home
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.home.rule=Host(`simpleverse.io.vn`)"
+      - "traefik.http.routers.home.entrypoints=websecure"
+      - "traefik.http.routers.home.tls.certresolver=letsencrypt"
+      - "traefik.http.services.home.loadbalancer.server.port=80"
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true
