@@ -12,8 +12,8 @@ export const Card: React.FC<CardProps> = ({ children, className = '', hoverEffec
         <motion.div
             whileHover={hoverEffect ? { y: -5 } : {}}
             className={`
-        bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-xl p-6
-        ${hoverEffect ? 'hover:border-slate-700 hover:bg-slate-900/80 transition-colors' : ''}
+        bg-white dark:bg-slate-900/50 backdrop-blur-sm border border-slate-200 dark:border-slate-800 rounded-xl p-6
+        ${hoverEffect ? 'hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-900/80 transition-colors' : ''}
         ${className}
       `}
         >

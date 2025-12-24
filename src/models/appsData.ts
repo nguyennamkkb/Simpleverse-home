@@ -1,53 +1,21 @@
-import { Zap, Shield, Globe, Smartphone, Database, Cloud } from 'lucide-react';
+import { Shield, Clock } from 'lucide-react';
 import type { AppItem } from './types';
 
 export const appsData: AppItem[] = [
     {
-        title: 'Simpleverse Cloud',
-        description: 'Secure, decentralized cloud storage for your personal data.',
-        icon: Cloud,
+        title: 'VaultNote',
+        description: 'Secure password manager with end-to-end encryption. Keep your passwords safe and accessible.',
+        icon: Shield,
         color: 'text-blue-400',
         status: 'Live',
-        link: '#',
+        link: 'https://apps.apple.com/vn/app/vaultnote-password-manager/id6755835518?l=vi',
     },
     {
-        title: 'Shield VPN',
-        description: 'High-speed, privacy-focused VPN service.',
-        icon: Shield,
-        color: 'text-green-400',
-        status: 'Beta',
-        link: '#',
-    },
-    {
-        title: 'Connect Messenger',
-        description: 'End-to-end encrypted messaging for teams.',
-        icon: Smartphone,
+        title: 'Time Capsule',
+        description: 'Preserve your memories and messages for the future. Coming soon to App Store.',
+        icon: Clock,
         color: 'text-purple-400',
         status: 'Coming Soon',
-        link: '#',
-    },
-    {
-        title: 'Global Pay',
-        description: 'Borderless payments with minimal fees.',
-        icon: Globe,
-        color: 'text-yellow-400',
-        status: 'Coming Soon',
-        link: '#',
-    },
-    {
-        title: 'Data Vault',
-        description: 'Enterprise-grade database solutions.',
-        icon: Database,
-        color: 'text-red-400',
-        status: 'Coming Soon',
-        link: '#',
-    },
-    {
-        title: 'Speed Test',
-        description: 'Measure your internet connection performance.',
-        icon: Zap,
-        color: 'text-cyan-400',
-        status: 'Live',
         link: '#',
     },
 ];
