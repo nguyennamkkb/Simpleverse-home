@@ -16,6 +16,9 @@ export interface AppItem {
     color: string;
     status: 'Live' | 'Beta' | 'Coming Soon';
     link: string;
+    logo?: string;
+    stats?: string;
+    features?: string[];
 }
 
 export interface NavItem {

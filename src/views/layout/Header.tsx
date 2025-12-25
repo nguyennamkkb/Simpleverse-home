@@ -11,10 +11,10 @@ export const Header: React.FC = () => {
         <header className="fixed top-0 left-0 right-0 z-50 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md">
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <Link to="/" className="flex items-center space-x-2">
-                    <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                    <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                         <span className="text-white font-bold text-xl">S</span>
                     </div>
-                    <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-400">
+                    <span className="text-xl font-bold text-slate-900 dark:text-white">
                         Simpleverse
                     </span>
                 </Link>

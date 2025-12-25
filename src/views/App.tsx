@@ -2,6 +2,8 @@ import { Routes, Route } from 'react-router-dom';
 import { Layout } from './layout/Layout';
 import { Hero } from './components/Hero';
 import { AppGrid } from './components/AppGrid';
+import { WorkExperience } from './components/WorkExperience';
+import { Contact } from './components/Contact';
 import { ToolsPage } from './pages/ToolsPage';
 import { QRCodeGenerator } from './pages/tools/QRCodeGenerator';
 import { ImageConverter } from './pages/tools/ImageConverter';
@@ -26,21 +28,8 @@ const Home = () => (
   <>
     <Hero />
     <AppGrid />
-    <section id="about" className="py-20 bg-white dark:bg-slate-950">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-6">About Simpleverse</h2>
-        <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-8">
-          Simpleverse is a collection of privacy-focused applications and developer tools built by Nam Nguyen.
-          Our mission is to create valuable applications that truly serve users' needs, while respecting your privacy, your time, and your intelligence.
-        </p>
-        <div className="flex flex-col items-center gap-2 text-slate-600 dark:text-slate-400">
-          <p className="font-medium">Contact</p>
-          <a href="mailto:nguyennam.kkb@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">
-            nguyennam.kkb@gmail.com
-          </a>
-        </div>
-      </div>
-    </section>
+    <WorkExperience />
+    <Contact />
   </>
 );
 
